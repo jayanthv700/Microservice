@@ -1,0 +1,5 @@
+> Event_Order_Service and Event_Product_Service performs synchronize communcation(Feign client):
+Event_Order_Service will get the data from Event_Product_Service
+
+> Event_Product_Service and Event_Noification_Service performs asynchronization communcation(Kafka server):
+Event_Product_Service is the producer which is sending the data to Event_Noification_Service which is the consumer.
